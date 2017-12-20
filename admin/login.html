@@ -4,34 +4,61 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<title>资联虹康官网后台</title>
-	<link rel="stylesheet" type="text/css" href="lib/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
 	<style>
-		.container {
-			margin-top: 10%;
+		.panel {
+			position: absolute;
+			top: 120px;
+			width: 400px;
+			margin: 0 auto;
+			left: 0;
+			right: 0;
 		}
 	</style>
 </head>
 <body>
 
-	<div class="container col-lg-2 col-md-4 col-sm-6 col-xs-10 col-lg-offset-5 col-md-offset-4 col-sm-offset-3 col-xs-offset-1">	
+	<div id="myModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">提示</h4>
+				</div>
+				<div class="modal-body">正在请求服务器...</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="login" class="container-fluid">
+		
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<strong>Login</strong>
 			</div>
 			<div class="panel-body">
 				<div class="form-group">
-					<label for="username">Username</label>
+					<label for="username" class="control-label">Username</label>
 					<input type="text" id="username" class="form-control">
 				</div>
 				<div class="form-group">
-					<label for="password">Password</label>
+					<label for="password" class="control-label">Password</label>
 					<input type="password" id="password" class="form-control">
 				</div>
-				<button class="btn btn-default">Submit</button>
+				<button id="btn-login" class="btn btn-default">Submit</button>
 			</div>
 		</div>
+
+		<!-- <div class="alert alert-danger alert-dismissible text-center">
+			<button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>
+			用户名或者密码错误
+		</div> -->
+
 	</div>
+
 	
+
 	<script src="core/jquery-3.2.1.min.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="public/js/login.js"></script>
 </body>
 </html>
