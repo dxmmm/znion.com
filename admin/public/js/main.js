@@ -10,4 +10,7 @@ var setListener = function() {
 		$("#sidebar a").removeClass("active");
 		$(this).addClass("active");
 	});
+	$("#logout").click(function() {
+		sessionStorage.removeItem("admin_user");
+	});
 }
