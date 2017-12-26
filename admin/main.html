@@ -2,17 +2,36 @@
 <html lang="zh-CN">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<title>资联虹康官网后台</title>
-	<link rel="stylesheet" type="text/css" href="public/css/sy.css">
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="public/css/main.css">
 </head>
 <body>
 
+	<nav  class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="main.html">资联虹康</a>
+			</div>
+		</div>
+	</nav>
 
-	<div id="spa-container">
+	<div class="container-fluid">
+		<div id="sidebar" class="list-group col-md-2">
+			<a href="#home/index" class="list-group-item">后台主页</a>
+			<a href="#carousel/list" class="list-group-item">轮播管理</a>
+			<a href="#recruit/list" class="list-group-item">招聘管理</a>
+			<a href="#product/list" class="list-group-item">产品管理</a>
+		</div>
 
+		<div id="spa-container" class="col-md-10">
+			<img src="public/img/znion.png" class="brand">
+		</div>
 	</div>
 
 	<script src="core/jquery-3.2.1.min.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
 	<script src="core/spa_config.js"></script>
 	<script src="core/router.js"></script>
 	<script src="core/spa.js"></script>

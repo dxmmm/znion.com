@@ -14,6 +14,7 @@ $(function() {
 	$("#btn-login").click(function() {
 		var username = $("#username").val();
 		var password = $("#password").val();
+		var $btn = $(this).button('loading');
 		if(username != "admin" && password != "123") {
 			var errorTip = "<div class='alert alert-danger alert-dismissible text-center'>";
 			errorTip += "<button class='close' data-dismiss='alert'>";
@@ -23,9 +24,11 @@ $(function() {
 			errorTip += "用户名或者密码错误";
 			errorTip += "</div>";
 			$("#login").append(errorTip);
+			$btn.button('reset')
 		}else {
 			$('#myModal').modal("show");
 			setTimeout(function() {
+				$btn.button('reset')
 				$('#myModal').modal("hide");
 				sessionStorage.setItem("admin_user","admin");
 				window.location.href = "main.html";
