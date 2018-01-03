@@ -36,7 +36,7 @@ $(function() {
 				$('#myModal').modal("hide");
 				sessionStorage.setItem("admin_user","admin");
 				window.location.href = "main.html";
-			},3000);
+			},1000);
 		}
 		if(username != "admin") {
 			$("#username").parent().addClass("has-error has-feedback").append(errorDom);

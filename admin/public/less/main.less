@@ -19,8 +19,29 @@ body {
 		display: block;
 		margin: 250px auto;
 	}
+
+	#carousel-nav {
+		margin-top: 20px;
+		margin-bottom: 40px;
+	}
+	#carousel-table {
+		img {
+			width: 400px;
+			height: 300px;
+		}
+	}
+	#carousel-form {
+		border: 1px solid #ddd;
+		padding: 20px;
+		margin-bottom: 20px;
+	}
 }
 
 
 
 /* bootstrap 重写*/
+.btn:focus,.btn:active:focus,.btn.active:focus,.btn.focus,.btn:active.focus,.btn.active.focus {
+    outline: none;
+    border-color: transparent;
+    box-shadow:none;
+}

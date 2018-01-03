@@ -2,7 +2,7 @@
 var MODULE_MAP = {
 	"error": ["index"],
 	"home": ["index"],
-	"carousel": ["list"],
-	"recruit": ["list"],
-	"product": ["list"],
+	"carousel": ["list","add"],
+	"recruit": ["list","add"],
+	"product": ["list","add"],
 };
