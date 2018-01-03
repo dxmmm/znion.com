@@ -1,0 +1,139 @@
+.container {
+	width: 100%;
+}
+
+.container .row-carousel {
+	background: #E8E8E8;
+	padding: 0 15%;
+}
+.row-carousel .col-md-6{
+	padding: 0 5%;
+}
+.row-carousel .carousel-control.right,
+.row-carousel .carousel-control.left {
+	background: none;
+}
+
+.row-carousel .carousel-indicators li {
+	border: 2px solid #f0f0f0;
+}
+
+.row-carousel .carousel-indicators .active {
+	background: rgba(0, 0, 0, 0.21);
+}
+
+.row-carousel .carousel-inner>.item>img {
+	margin: 30px auto 70px;
+	width: 100%;
+}
+
+.row-carousel .col-md-6 .min-carousel-img {
+	width: 33%;
+	float: left;
+	padding-bottom: 10%;
+}
+
+.row-carousel .col-md-6 h2 {
+	margin-top: 20%;
+	font-size: 50px;
+}
+
+.row-carousel .col-md-6 .title-product-images {
+	padding-top: 30px;
+}
+
+/*产品分类*/
+.product-assortment{
+	text-align: center;
+	padding-bottom: 20px;
+	font-weight:bold;
+}
+.product-assortment li{
+	width: 100px;
+	margin:10px 10px 0;
+}
+.product-assortment li:hover{
+	background-color: rgba(0,101,55,0.4);
+	transition: 0.5s;
+}
+/*产品列表*/
+
+.product-row {
+	margin: 0 15%;
+}
+
+.thumbnail{
+	background-color: rgba(0,0,0,0.1);
+	height: 350px;
+	position: relative;
+	border:none;
+}
+.thumbnail .product-border{
+	width: 100%;
+	height: 100%;
+	transition: 1s;
+}
+.thumbnail strong{
+    text-align: center;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #333;
+}
+.thumbnail:hover .product-border{
+	border: 1px solid rgb(0,101,55);
+	width:70%;
+	height:70%;
+}
+.thumbnail img,.thumbnail .product-border{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.thumbnail img{
+	width: 60%;
+	transition: 1s;
+}
+.thumbnail:hover img{
+	transform: scale(1.3);
+}
+
+
+
+/*ipad*/
+
+@media only screen and (min-width: 760px) and (max-width: 768px) {
+	.col-md-6 h2 {
+		margin-top: 0px;
+	}
+	.col-md-6 {
+		text-align: center;
+	}
+	.product-row {
+		margin-right: -15px;
+		margin-left: -15px;
+	}
+}
+
+
+/*移动端样式*/
+
+@media only screen and (min-width: 100px) and (max-width: 760px) {
+	.product-row {
+		margin-right: -15px;
+		margin-left: -15px;
+	}
+	.container .row-carousel{
+		padding: 0 10px;
+	}
+	.row-carousel .col-md-6 h2{
+		margin-top: 5%;
+	}
+}
+
+
