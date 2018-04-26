@@ -21,7 +21,7 @@ var setListener = function() {
 		$(".row .col-md-4 div").css({"bottom":"-50px","opacity":"0"});
 		$(window).scroll(function() {
 			var s = $(window).scrollTop();
-			if(s > 600 && s < 700) {
+			if(s > 800) {
 				$(".col-md-4").children().css({
 					"bottom": "0px",
 					"opacity": "1",

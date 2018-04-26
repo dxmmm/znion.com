@@ -18,7 +18,7 @@
 
 .carousel-inner>.item>img {
 	padding: 30px 50px 250px;
-	width: 35%;
+	width: 50%;
 }
 
 #myCarousel {
@@ -168,13 +168,13 @@
 .row .col-sm-6 .thumbnail{
 	border: none;
 	border-right: 1px solid #ddd;
-	background-color:rgba(0,0,0,0.4);
+	background-color:rgba(0,0,0,0.2);
 	height: 500px;
 	border-radius: 0px;
 }
 .thumbnail a>img, .thumbnail>img{
 	width: 60%;
-	padding-top: 180px;
+	padding-top: 100px;
 }
 .thumbnail a>img, .thumbnail>h3{
 	text-align: center;

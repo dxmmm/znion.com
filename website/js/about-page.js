@@ -6,7 +6,7 @@ $(function() {
 var init = function() {
 	var i = 1;
 	setInterval(function() {
-		if(i < 8) {
+		if(i < 5) {
 			i++;
 		} else {
 			i = 1;
