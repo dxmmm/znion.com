@@ -1,33 +1,28 @@
-.carousel-control.right,
-.carousel-control.left {
-	background-image: none;
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right{
+	font-size: 0.8rem;
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img{
+	padding: 10%;
+}
+@media only screen and (min-width: 1300px){
+	.carousel-inner>.item>a>img,
+	.carousel-inner>.item>img {
+		margin: auto;
+	}
+	.carousel-inner>.item>img{
+		padding: 30px 50px 250px;
+		width: 50%;
+	}
 }
 
-.carousel-indicators .active {
-	background: rgba(0, 0, 0, 0.21)
-}
-
-.carousel-indicators li {
-	border: 2px solid #E3E3E3;
-}
-
-.carousel-inner>.item>a>img,
-.carousel-inner>.item>img {
-	margin: auto;
-}
-
-.carousel-inner>.item>img {
-	padding: 30px 50px 250px;
-	width: 50%;
-}
-
-#myCarousel {
+#myCarousel{
 	background-color: #f0f0f0;
 	width: 95%;
 	margin: auto;
 }
 
-.main-product-title {
+.main-product-title{
 	width: 73px;
 	display: block;
 	padding: 50px 0;
@@ -36,13 +31,13 @@
 	color: #ccc;
 }
 
-.botton-border {
+.botton-border{
 	width: 30px;
 	margin: 0 auto;
 	border-bottom: 1px solid rgb(0, 101, 55);
 }
 
-.main-product {
+.main-product{
 	position: absolute;
 	bottom: 120px;
 	left: 0;
@@ -51,9 +46,10 @@
 	margin: auto;
 }
 
-.carousel-indicators {
+
+/*.carousel-indicators {
 	bottom: 200px;
-}
+}*/
 
 .main-product .main-product-bottom {
 	display: block;
@@ -63,18 +59,22 @@
 
 
 /*轮播图下面产品特点*/
-.container{
+
+.container {
 	padding: 0 80px;
 }
+
 .row {
 	position: relative;
 	padding-left: 0px;
 }
-.box-shadow-row{
+
+.box-shadow-row {
 	box-shadow: 0 0 15px rgba(0, 0, 0, .5);
 	transform: translateY(-70px);
 	transition: 2s;
 }
+
 .container .row .col-xs-6 {
 	background-color: #fff;
 	height: 130px;
@@ -107,94 +107,90 @@
 	top: 25%;
 }
 
-.row .col-md-4 div {
+.row .col-md-6 div {
 	border: 1px solid #E3E3E3;
 	padding: 30px;
 	position: relative;
 }
-.row .col-md-4 div .col-md-4-line {
+
+.row .col-md-6 div .col-md-6-line {
 	width: 80%;
 	border-bottom: 1px solid #e3e3e3;
 	position: absolute;
-	left:30px;
+	left: 30px;
 }
-.row .col-md-4 div .mouse-line {
+
+.row .col-md-6 div .mouse-line {
 	width: 0px;
 	border-bottom: 1px solid #bfbfbf;
 	transition: width 1s ease;
 	position: absolute;
-	left:30px;
+	left: 30px;
 }
-.row .col-md-4:hover div{
+
+.row .col-md-6:hover div {
 	border-color: #bfbfbf;
 	transition: 1s;
 }
-.row .col-md-4:hover .mouse-line{
+
+.row .col-md-6:hover .mouse-line {
 	width: 80%;
 }
-.row .col-md-4:hover .col-md-4-title{
-	color: rgb(0,101,55);
+
+.row .col-md-6:hover .col-md-6-title {
+	color: rgb(0, 101, 55);
 	transition: 1s;
 }
-.svg-arrow{
-	width:35px;
-	height:35px;
+
+.svg-arrow {
+	width: 35px;
+	height: 35px;
 	margin: 10px 0px 0px 0px;
 	cursor: pointer;
 }
-.svg-arrow:hover{
-	color:rgb(0,101,55);
+
+.svg-arrow:hover {
+	color: rgb(0, 101, 55);
 }
-.row .col-md-4 .col-md-4-content {
+
+.row .col-md-6 {
+	padding: 15px;
+}
+
+.row .col-md-6 .col-md-6-content {
 	line-height: 19px;
 	height: 125px;
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
-	-webkit-line-clamp:6;
+	-webkit-line-clamp: 6;
 	overflow: hidden;
 	padding-top: 20px;
 }
-.padding-left-none{
+
+.padding-left-none {
 	padding-left: 0px;
 }
-.padding-right-none{
+
+.padding-right-none {
 	padding-right: 0px;
 }
 
-/*产品缩略图*/
-.row .col-sm-6,.row .col-sm-6 .thumbnail{
-	padding: 0;
-}
-.row .col-sm-6 .thumbnail{
-	border: none;
-	border-right: 1px solid #ddd;
-	background-color:rgba(0,0,0,0.2);
-	height: 500px;
-	border-radius: 0px;
-}
-.thumbnail a>img, .thumbnail>img{
-	width: 60%;
-	padding-top: 100px;
-}
-.thumbnail a>img, .thumbnail>h3{
-	text-align: center;
-}
-.thumbnail:hover img{
-	transform: translateY(-15px);
-	transition: 0.5s;
-}
-.thumbnail:hover h3{
-	transform: translateY(-15px);
-	transition: 0.5s;
-}
 
 /*ipad*/
+
 @media only screen and (min-width: 760px) and (max-width: 768px) {
-	.col-md-4{
+	.col-md-6 {
 		padding: 0px;
 	}
+	.row .col-md-6 .col-md-6-content{
+		padding-top: 10px;
+		line-height: 17px;
+	}
 }
+
+
 /*移动端样式*/
+
 @media only screen and (min-width: 100px) and (max-width: 760px) {
 	.container {
 		padding: 0 50px;
@@ -209,19 +205,11 @@
 	.container .row .col-xs-6 {
 		height: 50px;
 	}
-	.col-md-4{
+	.col-md-6 {
 		padding: 0px;
 	}
-	/*产品列表图*/
-	.row .col-sm-6{
-		width: 50%;
-		float: left;
-	}
-	.row .col-sm-6 .thumbnail{
-		height: 250px;
-		margin-bottom: 0px;
-	}
-	.thumbnail a>img, .thumbnail>img{
-		padding-top:80px;
+	.row .col-md-6 .col-md-6-content{
+		padding-top: 10px;
+		line-height: 17px;
 	}
 }

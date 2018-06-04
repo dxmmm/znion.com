@@ -25,7 +25,9 @@ ul {
 .navbar-toggle {
 	background: #E3E3E3;
 }
-
+.navbar-toggle .icon-bar{
+	background: grey;
+}
 footer {
 	padding: 30px 10% 0px;
 }
@@ -46,6 +48,9 @@ footer .col-md-3 small {
 	footer .col-md-3 {
 		padding: 20px 80px 0;
 	}
+	footer{
+		display: none;
+	}
 }
 
 
@@ -61,6 +66,9 @@ footer .col-md-3 small {
 		float: left;
 		text-align: center;
 	}
+	footer{
+		display: none;
+	}
 }
 
 /*通用*/
@@ -70,7 +78,6 @@ footer .col-md-3 small {
 	color: #e5e5e5;
 	text-align: center;
 	font-size: 50px;
-	padding-top:80px;
 }
 .h2-news-title:hover{
 	color: rgba(0,101,55,.8);

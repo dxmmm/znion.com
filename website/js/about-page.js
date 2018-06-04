@@ -11,7 +11,7 @@ var init = function() {
 		} else {
 			i = 1;
 		}
-		$(".title-img-box img").attr("src", "../image/company" + i + ".jpg");
+		$(".title-img-box img").attr("src", "img/company" + i + ".jpg");
 	}, 8000);
 	
 }

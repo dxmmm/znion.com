@@ -39,7 +39,7 @@ var init = function() {
 			$("#content").load("join-page.html");
 			break;	
 		default:
-			location.href = "main.html?active=home-page";
+			location.href = "index.html?active=home-page";
 			break;
 	}
 }
@@ -48,7 +48,7 @@ var init = function() {
 var setListener = function() {
 	$(".nav-skip").click(function() {
 		var active = $(this).attr("class").split(" ")[0];
-		location.href = "main.html?active=" + active;
+		location.href = "index.html?active=" + active;
 	});
 }
 
