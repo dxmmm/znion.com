@@ -13,4 +13,8 @@ var setListener = function() {
 		syTools.getUrlParam("news");
 		$("#content").load("news.html");
 	});
+	$("#news-visit").click(function(){
+		syTools.getUrlParam("news");
+		$("#content").load("news-visit.html");
+	});
 }
